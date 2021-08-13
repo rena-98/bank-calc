@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>Kapital Bank Faizleri</title>
+</head>
+<body>
+    <section class="section-one">
+        <h1 style="font-size: 35px;">Kapital depoziti kalkulyatoru</h1>
+        <p>Kapital əmanəti ilə yüksək faiz əldə etməklə yanaşı müddətin yarısınadək məbləğı artıra bilərsiniz.</p>
+        <div class="section-one-block">
+        <div class="section-one-block-one">
+          <div class="section-one-layer-one">
+           <select name="" id="currency">
+             <option value="azn">AZN</option>
+             <option value="usd">USD</option>
+            
+           </select>
+            <p>Aylıq</p>
+            <div class="switch">
+              <input type="checkbox" id="switch">
+              <label for="switch"></label>
+            </div>
+            <p>Müddətin sonu</p>
+          </div>
+          <div> 
+            <input id="input-amount" type="text" value="20000">
+            <span id="input-amount-cur">AZN</span>
+          </div>
+          <div>
+            <div class="input-range-top">
+             <p>Müddət</p>
+             <span id="demo"></span>
+            </div>
+            <input type="range" value="0" min="0" max="3"  class="slider" id="myRange">
+           
+          </div>
+        </div>
+      
+          <div class="section-one-layer-two">
+            <span id="percent" class="percent" style="font-size: 42px;">6 %</span>
+            <p>Ümumi faiz gəliri</p>
+            <span id="percent-year" class="percent">1200AZN</span>
+            <p>Aylıq faiz gəliri</p>
+            <span id="percent-month" class="percent">100AZN</span>
+          </div>
+        </div>
+        </div>
+    </section>
+    <section class="section-three">
+        <h2>Faiz dərəcələri</h2>
+        <table class="section-three-table">
+            <tr>
+              <th>Depozit müddəti (aylar üzrə)</th>
+              <th>Faizlər aylıq ödənildikdə</th>
+              <th></th>
+              <th>Faizlər müddətin sonunda ödənildikdə</th>
+              <th></th>
+            </tr>
+            <tr>
+              <td></td>
+              <td>AZN</td>
+              <td>USD</td>
+              <td>AZN</td>
+              <td>USD</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>6.0%</td>
+              <td></td>
+              <td>6.5%</td>
+              <td>0.1%</td>
+
+            </tr>
+            <tr>
+              <td>18</td>
+              <td>6.5%</td>
+              <td></td>
+              <td>7.0%</td>
+              <td></td>
+
+            </tr>
+            <tr>
+              <td>24</td>
+              <td>7.0%</td>
+              <td>0.2%</td>
+              <td>7.5%</td>
+              <td>0.3%</td>
+
+            </tr>
+            <tr>
+              <td>36</td>
+              <td>7.5%</td>
+              <td>0.4%</td>
+              <td>8.0%</td>
+              <td>0.5%</td>
+
+            </tr>
+          </table>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>
